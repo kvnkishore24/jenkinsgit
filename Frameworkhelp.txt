@@ -1,0 +1,66 @@
+##AlphaStreet
+##@kishore kalapala
+
+
+
+##Object Repository File Rules Doc
+
+AlphaStreet's Object Repository XML following Rules:-
+
+		Images:			<identicalName>_Img
+		Boxes:			<identicalName>_TBox,<identicalName>_RBtn,<identicalName>_CBox
+		Buttons:		<identicalName>_Btn
+		labels:			<identicalName>_Lbl
+		Text:			<identicalName>_Txt
+		DropDown:		<identicalName>_DD
+			-List Item 		<identicalName>_DD_LI
+		DIV's:			<identicalName>_Div
+		Links's:		<identicalName>_Lnk
+
+
+##TestNG TestCase Skeleton
+	Logger log = Logger.getLogger(BaseTest.class.getName());
+	@Test(priority = -, description = "----")
+	public void ----(Method method) {
+
+		log = Logger.getLogger(method.getName());
+		PropertyConfigurator.configure("Log4j.properties");
+		log.info("------------" + method.getName() + "------------");
+		try {
+			
+		} catch (Exception e) {
+			Assert.assertTrue(false);
+			log.error(e.getMessage());
+		}
+		log.info("-----------TestCase-Completed------------");
+		
+	}
+## arguments passing by eclipse Way::
+
+
+
+Logger log = Logger.getLogger(LoginPopUp.class.getName());
+
+	@Test(priority = 1, description = "Testing the number of Bite's displaying default")
+	public void defaultBitesDisplayingTest(Method method) throws InterruptedException {
+		log = Logger.getLogger(Thread.currentThread().getStackTrace()[1].getMethodName());
+		PropertyConfigurator.configure("Log4j.properties");
+		log.info("TESTCASE::________" + Thread.currentThread().getStackTrace()[1].getMethodName());
+		try {
+			}
+		} catch (Exception e) {
+			log.error(e.getMessage());
+			Assert.assertTrue(false);
+		}
+		log.info("---------------TESTCASE COMPLETED----------------");
+	}
+	
+		<object>
+			<name></name>
+			<identifyby></identifyby>
+			<value></value>
+			<etext></etext>
+		</object>
+
+
+	
