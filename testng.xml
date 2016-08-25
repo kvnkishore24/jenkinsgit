@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="regression" parallel="false" thread-count="2" >
+	<listeners> <listener class-name="utils.DataBaseCustomReporter" /> </listeners>
+	<test name="Chrome" preserve-order="true">
+		<parameter name="browser" value="chrome" />
+		<parameter name="browsername" value="Chrome Browser" />
+		<classes >
+			<class name="welcomePage.LaunchAlhpastreetwebsite"></class>
+			<!--<class name="welcomePage.MarketingPageElements" ></class>
+			<class name="welcomePage.LoginPopUp" ></class>
+			<class name="welcomePage.SingupPopUp"></class>
+			<class name="welcomePage.Login"></class>-->
+		<!-- <class name="mystocksPage.MystocksPageConfirmation"></class>
+			<class name="mystocksPage.Overview_button"></class>
+			<class name="mystocksPage.Overview_button_fiterALPHATALKS"></class>
+			<class name="explorePage.ExplorePageConfirmation"></class> 
+			<class name="eventsPage.EventsPageConfirmation"></class>-->
+			
+			<!-- <class name="homePage.HomepageLeftMenuBarElements"></class> <class name="homePage.HomepageCenterViewPointElements"></class> <class name="homePage.HomepageRightMenuBarElements"></class> -->
+		</classes>
+	</test>
+	<!-- <test name="Firefox" preserve-order="true"> <parameter name="browser" value="firefox" /> <parameter name="browsername" value="FireFox Browser" /> <classes> <class name="welcomePage.LaunchAlhpastreetwebsite"></class> 
+		<class name="welcomePage.LoginPopUp"></class> <class name="welcomePage.SingupPopUp"></class> <class name="welcomePage.Login"></class> <class name="homePage.HomepageTopMenuBarElements"></class> <class name="homePage.HomepageLeftMenuBarElements"></class> 
+		<class name="homePage.HomepageCenterViewPointElements"></class> <class name="homePage.HomepageRightMenuBarElements"></class> </classes> </test> <test name="IE" preserve-order="true"> <parameter name="browser" 
+		value="ie" /> <parameter name="browsername" value="IE Browser" /> <classes> <class name="welcomePage.LaunchAlhpastreetwebsite"></class> <class name="welcomePage.LoginPopUp"></class> <class name="welcomePage.SingupPopUp"></class> 
+		<class name="welcomePage.Login"></class> <class name="homePage.HomepageTopMenuBarElements"></class> <class name="homePage.HomepageLeftMenuBarElements"></class> <class name="homePage.HomepageCenterViewPointElements"></class> 
+		<class name="homePage.HomepageRightMenuBarElements"></class> </classes> </test> -->
+</suite>
